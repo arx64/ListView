@@ -12,9 +12,9 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         String[] arrName = {"Samsung","Sony","Apple","LG","Motorola",
                 "HTC","Acer","Lenovo","Oppo","Nokia","BlackBerry","Huawei","ZTE","Meizu","HP","Asus","Panasonic"};
-                ArrayAdapter adapter = new ArrayAdapter(this,
+                ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, arrName);
-        ListView listView = (ListView) findViewById(R.id.id_list);
+        ListView listView = findViewById(R.id.id_list);
         listView.setAdapter(adapter);
 }
     }
